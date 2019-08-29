@@ -17,12 +17,17 @@ class IntroductionHome extends Component {
 
   displayParallaxHeader = () => {
     return (
-      <div className="parallax-container">
+      <div className="parallax-container" id="parallax-intro">
         <div className="parallax">
           <img src={subwayImg} alt="" />
-          <div className="container">
+          <div className="container-main-flexbox">
+            <div className="container" id="displayNameHomePage">
+              <div className="row">
+                <span className="unique col s12 m12">Jonathan Erquinigo</span>
+              </div>
+            </div>
             <div className="row">
-              <span className="unique col s12 m12">Jonathan Erquinigo</span>
+              <span className="unique col s12 m12">Software Engineer</span>
             </div>
           </div>
         </div>
@@ -34,17 +39,6 @@ class IntroductionHome extends Component {
     return (
       <div>
         {this.displayParallaxHeader()}
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
         <br />
         <br />
         <br />

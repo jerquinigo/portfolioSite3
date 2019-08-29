@@ -1,6 +1,21 @@
+.container-main-flexbox {
+  height: 100%;
+  width: 100%;
+}
+
+#displayNameHomePage {
+  height: 50%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .unique {
-  font-size: 5.5em;
+  font-size: 5em;
   color: white;
   /* position: absolute; */
   position: relative;
+}
+
+#parallax-intro {
+  height: 100vh;
 }
