@@ -1,0 +1,15 @@
+#parallax-skills {
+  height: 80vh;
+}
+
+#skills-main-container {
+  position: relative;
+}
+
+.row .col.s6.skillImage {
+  width: 20%;
+}
+
+#customImg {
+  width: 20%;
+}
