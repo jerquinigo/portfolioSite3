@@ -36,21 +36,7 @@ class IntroductionHome extends Component {
   };
 
   render() {
-    return (
-      <div>
-        {this.displayParallaxHeader()}
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-      </div>
-    );
+    return <div>{this.displayParallaxHeader()}</div>;
   }
 }
 
