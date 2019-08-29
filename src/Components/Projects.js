@@ -1,5 +1,9 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import saveAPlate1 from "../Assets/saveAPlate1.png";
+import interest1 from "../Assets/interest1.png";
+import retroMusicPlayer from "../Assets/retroMusicPlayer.png";
+import "./CSS/Projects.css";
 
 class Projects extends Component {
   constructor() {
@@ -8,34 +12,133 @@ class Projects extends Component {
 
   displaySaveAPlate = () => {
     return (
-      <div className="container">
-        <div className="row">
-          <div className="card col s12 m6">
-            <div className="card-image waves-effect waves-block waves-light">
-              <img className="activator" src={saveAPlate1} alt="" />
-            </div>
-            <div className="card-content">
-              <span className="card-title activator grey-text text-darken-4">
+      <div className="main-card-container">
+        <div className="card col s12 m6">
+          <div className="card-image waves-effect waves-block waves-light">
+            <img className="activator" src={saveAPlate1} alt="" />
+          </div>
+          <div className="card-content">
+            <div className="row">
+              <span className="card-title activator grey-text text-darken-4 col s12">
                 Save A Plate <i className="material-icons right">more_vert</i>
               </span>
-              <div className="row">
-                <p className="col s6">
-                  <a href="#">This is a link</a>
-                </p>
-                <p className="col s6">
-                  <a href="#">This is a link</a>
-                </p>
-              </div>
             </div>
-            <div className="card-reveal">
-              <span className="card-title grey-text text-darken-4">
-                Card Title<i className="material-icons right">close</i>
-              </span>
-              <p>
-                Here is some more information about this product that is only
-                revealed once clicked on.
+            <div className="row">
+              <p className="col s6">
+                <a target="blank" href="http://save-a-plate.herokuapp.com/">
+                  Live Site
+                </a>
+              </p>
+              <p className="col s6">
+                <a
+                  target="blank"
+                  href="https://github.com/jerquinigo/SaveAPlate"
+                >
+                  Github Code
+                </a>
               </p>
             </div>
+          </div>
+          <div className="card-reveal">
+            <span className="card-title grey-text text-darken-4">
+              Save A Plate<i className="material-icons right">close</i>
+            </span>
+            <p>
+              a webapp that was created to reduce food waste and hunger in NYC.
+              There are two types of users: Vendors & Clients. Vendors include
+              businesses such as restaurants and catering halls. They have the
+              option to add food items for donation. On the other hand, clients
+              are non-profit organizations that can claim those food items as
+              well as favorite vendors.
+            </p>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+  displayInterest = () => {
+    return (
+      <div className="main-card-container">
+        <div className="card col s12 m6">
+          <div className="card-image waves-effect waves-block waves-light">
+            <img className="activator" src={interest1} alt="" />
+          </div>
+          <div className="card-content">
+            <div className="row">
+              <span className="card-title activator grey-text text-darken-4 col s12">
+                Interest <i className="material-icons right">more_vert</i>
+              </span>
+            </div>
+            <div className="row">
+              <p className="col s6">
+                <a href="#">This is a link</a>
+              </p>
+              <p className="col s6">
+                <a href="#">This is a link</a>
+              </p>
+            </div>
+          </div>
+          <div className="card-reveal">
+            <span className="card-title grey-text text-darken-4">
+              Interest<i className="material-icons right">close</i>
+            </span>
+            <p>
+              Interest is a clone of the Pinterest Website. I wanted to test my
+              skills and recreate the same functionality that The real website
+              offers. It was a challenging task, but managed to replicate it. It
+              is a fullstack application that uses all my current tech stack
+              skills. It has user authentications and redux to manage the
+              states.
+            </p>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+  displayRetroPlayer = () => {
+    return (
+      <div className="main-card-container">
+        <div className="card col s12 m6">
+          <div className="card-image waves-effect waves-block waves-light">
+            <img className="activator" src={retroMusicPlayer} alt="" />
+          </div>
+          <div className="card-content">
+            <div className="row">
+              <span className="card-title activator grey-text text-darken-4 col s12">
+                Retro Music Player{" "}
+                <i className="material-icons right">more_vert</i>
+              </span>
+            </div>
+            <div className="row">
+              <p className="col s6">
+                <a
+                  target="blank"
+                  href="https://retroplayer-af548.firebaseapp.com/"
+                >
+                  Live Site
+                </a>
+              </p>
+              <p className="col s6">
+                <a
+                  target="blank"
+                  href="https://github.com/jerquinigo/youtube-retro-player"
+                >
+                  Github Code
+                </a>
+              </p>
+            </div>
+          </div>
+          <div className="card-reveal">
+            <span className="card-title grey-text text-darken-4">
+              Retro Music Player<i className="material-icons right">close</i>
+            </span>
+            <p>
+              A site that is using YouTube API to get videos by a search request
+              and play the video in an old school crt tv. The application is
+              meant to give the 90's MTV's aesthetic.
+            </p>
           </div>
         </div>
       </div>
@@ -43,7 +146,17 @@ class Projects extends Component {
   };
 
   render() {
-    return <div>{this.displaySaveAPlate()}</div>;
+    return (
+      <div>
+        <h2>My Projects</h2>
+        <div className="container">
+          {this.displaySaveAPlate()}
+          <div className="col m4" />
+          {this.displayInterest()}
+          {this.displayRetroPlayer()}
+        </div>
+      </div>
+    );
   }
 }
 
