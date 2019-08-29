@@ -54,8 +54,34 @@ class Skills extends Component {
             />
           </div>
         </div>
-        <div className="row">
-          <span className="col s12 m12">Backend</span>
+        <div className="container">
+          <div className="row">
+            <span className="col s12 m12">Backend</span>
+
+            <img
+              className="col s6 m3 skillImage2"
+              src="https://icongr.am/devicon/postgresql-original.svg"
+              alt=""
+            />
+
+            <img
+              className="col s6 m3 skillImage2"
+              src="https://icongr.am/devicon/nodejs-original-wordmark.svg"
+              alt=""
+            />
+
+            <img
+              className="col s6 m3 skillImage2"
+              src="https://icongr.am/devicon/express-original-wordmark.svg"
+              alt=""
+            />
+
+            <img
+              className="col s6 m3 skillImage2"
+              src="https://icongr.am/devicon/git-original.svg"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     );
