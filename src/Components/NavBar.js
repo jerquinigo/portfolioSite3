@@ -3,9 +3,9 @@ import M from "materialize-css";
 import "./CSS/NavBar.css";
 
 class NavBar extends Component {
-  // constructor() {
-  //   super();
-  // }
+  constructor() {
+    super();
+  }
 
   componentDidMount() {
     document.addEventListener("DOMContentLoaded", function() {
@@ -19,16 +19,13 @@ class NavBar extends Component {
       <div>
         <nav className="nav-wrapper indigo">
           <div className="container">
-            <a href="#" class="brand-logo">
-              Logo
-            </a>
             <a href="#" className="sidenav-trigger" data-target="mobile-links">
               <i className="material-icons">menu</i>
             </a>
 
             <ul className="right hide-on-med-and-down">
               <li>Home</li>
-              <li>Projects</li>
+              <li onClick={this.props.clickProjects}>Projects</li>
               <li>Skills</li>
             </ul>
           </div>

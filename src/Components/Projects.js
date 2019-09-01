@@ -147,7 +147,7 @@ class Projects extends Component {
 
   render() {
     return (
-      <div>
+      <div ref={this.props.projects}>
         <h2>My Projects</h2>
         <div className="container">
           {this.displaySaveAPlate()}
