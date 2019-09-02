@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import SaveAPlateCarousel from "./SaveAPlateCarousel.js";
+import InterestCarousel from "./InterestCarousel.js";
+import RetroMusicPlayerCarousel from "./RetroMusicPlayerCarousel.js";
 import M from "materialize-css";
 import saveAPlate1 from "../Assets/saveAPlate1.png";
 import interest1 from "../Assets/interest1.png";
@@ -65,7 +67,7 @@ class Projects extends Component {
               <div className="container">
                 <div className="row">
                   <div className="col s12">
-                    <SaveAPlateCarousel />
+                    <InterestCarousel />
                   </div>
                 </div>
               </div>
@@ -111,6 +113,13 @@ class Projects extends Component {
                 current tech stack skills. It has user authentications and redux
                 to manage the states.
               </span>
+              <div className="container">
+                <div className="row">
+                  <div className="col s12">
+                    <SaveAPlateCarousel />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -161,6 +170,13 @@ class Projects extends Component {
                 request and play the video in an old school crt tv. The
                 application is meant to give the 90's MTV's aesthetic.
               </span>
+              <div className="container">
+                <div className="row">
+                  <div className="col s12">
+                    <RetroMusicPlayerCarousel />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
