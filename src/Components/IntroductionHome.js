@@ -23,11 +23,15 @@ class IntroductionHome extends Component {
           <div className="container-main-flexbox">
             <div className="container" id="displayNameHomePage">
               <div className="row">
-                <span className="unique col s12 m12">Jonathan Erquinigo</span>
+                <span className="unique col s12 m12 name-style">
+                  Jonathan Erquinigo
+                </span>
               </div>
             </div>
             <div className="row">
-              <span className="unique col s12 m12">Software Engineer</span>
+              <span className="unique col s12 m12 name-style">
+                Software Engineer
+              </span>
             </div>
           </div>
         </div>

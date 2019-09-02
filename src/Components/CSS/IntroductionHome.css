@@ -3,6 +3,12 @@
   width: 100%;
 }
 
+.name-style {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+}
+
 #displayNameHomePage {
   height: 50%;
   display: flex;

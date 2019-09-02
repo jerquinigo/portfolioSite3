@@ -26,18 +26,22 @@ class NavBar extends Component {
             <ul className="right hide-on-med-and-down">
               <li>Home</li>
               <li onClick={this.props.clickProjects}>Projects</li>
-              <li>Skills</li>
+              <li onClick={this.props.clickSkills}>Skills</li>
             </ul>
           </div>
         </nav>
 
         <ul className="sidenav" id="mobile-links">
           <div className="logo-div indigo">
-            <li className="indigo">Jonathan Erquinigo</li>
+            <li className="sidenav-close indigo">Jonathan Erquinigo</li>
           </div>
           <li>link 1</li>
-          <li>link 2</li>
-          <li>link 3</li>
+          <li className="sidenav-close" onClick={this.props.clickProjects}>
+            Projects
+          </li>
+          <li className="sidenav-close" onClick={this.props.clickSkills}>
+            Skills
+          </li>
         </ul>
       </div>
     );

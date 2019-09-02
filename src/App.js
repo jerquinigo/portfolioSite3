@@ -11,6 +11,7 @@ class App extends Component {
   constructor() {
     super();
     this.projects = React.createRef();
+    this.skills = React.createRef();
   }
 
   clickProjects = e => {
@@ -18,7 +19,17 @@ class App extends Component {
     if (this.projects.current) {
       this.projects.current.scrollIntoView({
         behavior: "smooth",
-        block: "nearest"
+        block: "start"
+      });
+    }
+  };
+
+  clickSkills = e => {
+    //.current is verification that your element has rendered
+    if (this.skills.current) {
+      this.skills.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
       });
     }
   };
@@ -26,10 +37,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <NavBar clickProjects={this.clickProjects} />
+        <NavBar
+          clickProjects={this.clickProjects}
+          clickSkills={this.clickSkills}
+        />
         <IntroductionHome />
         <Projects projects={this.projects} />
-        <Skills />
+        <Skills skills={this.skills} />
       </div>
     );
   }

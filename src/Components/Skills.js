@@ -19,7 +19,7 @@ class Skills extends Component {
 
   displaySkills = () => {
     return (
-      <div>
+      <div ref={this.props.skills}>
         <div className="container">
           <div className="row">
             <span className="col s12 m12">frontend</span>
