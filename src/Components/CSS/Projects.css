@@ -1,0 +1,39 @@
+.projectHeader {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 4em;
+}
+
+.card .card-content .card-title {
+  font-size: 3em;
+  font-family: lato;
+  font-weight: 700;
+  font-style: bold;
+}
+
+.card-body-container {
+  margin-top: 5%;
+  width: 100%;
+}
+
+.card-body {
+  /* height: 100%; */
+  font-size: 1.5em;
+}
+
+.cImage {
+  width: 20%;
+}
+
+li.slide.selected {
+  background-color: #fff;
+}
+/* .test {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+} */
+
+/* .carousel .carousel-item > img {
+  width: 100%;
+} */

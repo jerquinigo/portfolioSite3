@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import SaveAPlateCarousel from "./SaveAPlateCarousel.js";
+import M from "materialize-css";
 import saveAPlate1 from "../Assets/saveAPlate1.png";
 import interest1 from "../Assets/interest1.png";
 import retroMusicPlayer from "../Assets/retroMusicPlayer.png";
@@ -8,6 +10,14 @@ import "./CSS/Projects.css";
 class Projects extends Component {
   constructor() {
     super();
+  }
+
+  componentDidMount() {
+    // document.addEventListener("DOMContentLoaded", function() {
+    //   var elems = document.querySelectorAll(".carousel");
+    //
+    //   M.Carousel.init(elems, { duration: 2000 });
+    // });
   }
 
   displaySaveAPlate = () => {
@@ -43,14 +53,23 @@ class Projects extends Component {
             <span className="card-title grey-text text-darken-4">
               Save A Plate<i className="material-icons right">close</i>
             </span>
-            <p>
-              a webapp that was created to reduce food waste and hunger in NYC.
-              There are two types of users: Vendors & Clients. Vendors include
-              businesses such as restaurants and catering halls. They have the
-              option to add food items for donation. On the other hand, clients
-              are non-profit organizations that can claim those food items as
-              well as favorite vendors.
-            </p>
+            <div className="card-body-container">
+              <span className="card-body">
+                a webapp that was created to reduce food waste and hunger in
+                NYC. There are two types of users: Vendors & Clients. Vendors
+                include businesses such as restaurants and catering halls. They
+                have the option to add food items for donation. On the other
+                hand, clients are non-profit organizations that can claim those
+                food items as well as favorite vendors.
+              </span>
+              <div className="container">
+                <div className="row">
+                  <div className="col s12">
+                    <SaveAPlateCarousel />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -83,14 +102,16 @@ class Projects extends Component {
             <span className="card-title grey-text text-darken-4">
               Interest<i className="material-icons right">close</i>
             </span>
-            <p>
-              Interest is a clone of the Pinterest Website. I wanted to test my
-              skills and recreate the same functionality that The real website
-              offers. It was a challenging task, but managed to replicate it. It
-              is a fullstack application that uses all my current tech stack
-              skills. It has user authentications and redux to manage the
-              states.
-            </p>
+            <div className="card-body-container">
+              <span className="card-body">
+                Interest is a clone of the Pinterest Website. I wanted to test
+                my skills and recreate the same functionality that The real
+                website offers. It was a challenging task, but managed to
+                replicate it. It is a fullstack application that uses all my
+                current tech stack skills. It has user authentications and redux
+                to manage the states.
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -134,11 +155,13 @@ class Projects extends Component {
             <span className="card-title grey-text text-darken-4">
               Retro Music Player<i className="material-icons right">close</i>
             </span>
-            <p>
-              A site that is using YouTube API to get videos by a search request
-              and play the video in an old school crt tv. The application is
-              meant to give the 90's MTV's aesthetic.
-            </p>
+            <div className="card-body-container">
+              <span className="card-body">
+                A site that is using YouTube API to get videos by a search
+                request and play the video in an old school crt tv. The
+                application is meant to give the 90's MTV's aesthetic.
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -148,7 +171,7 @@ class Projects extends Component {
   render() {
     return (
       <div ref={this.props.projects}>
-        <h2>My Projects</h2>
+        <h2 className="projectHeader">My Projects</h2>
         <div className="container">
           {this.displaySaveAPlate()}
           <div className="col m4" />
