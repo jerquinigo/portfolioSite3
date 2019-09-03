@@ -67,7 +67,7 @@ class Projects extends Component {
               <div className="container">
                 <div className="row">
                   <div className="col s12">
-                    <InterestCarousel />
+                    <SaveAPlateCarousel />
                   </div>
                 </div>
               </div>
@@ -116,7 +116,7 @@ class Projects extends Component {
               <div className="container">
                 <div className="row">
                   <div className="col s12">
-                    <SaveAPlateCarousel />
+                    <InterestCarousel />
                   </div>
                 </div>
               </div>

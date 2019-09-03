@@ -1,19 +1,30 @@
 import React, { Component } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import SaveAPlateVendorProfile from "../Assets/SaveAPlateCarousel/SaveAPlateVendorProfile.png";
+import SaveAPlateVendorFeedPage from "../Assets/SaveAPlateCarousel/SaveAPlateVendorFeedPage.png";
+import SaveAPlateClientPage from "../Assets/SaveAPlateCarousel/SaveAPlateClientPage.png";
+import SaveAPlateResources from "../Assets/SaveAPlateCarousel/SaveAPlateResources.png";
+import SaveAPlateTeam from "../Assets/SaveAPlateCarousel/SaveAPlateTeam.png";
 
 class SaveAPlateCarousel extends Component {
   render() {
     return (
       <Carousel>
         <div>
-          <img src="https://snworksceo.imgix.net/bsd/2af5201b-24a2-44ab-8aaf-c0194f7a82f0.sized-1000x1000.png?w=800" />
+          <img src={SaveAPlateVendorProfile} alt="" />
         </div>
         <div>
-          <img src="https://snworksceo.imgix.net/bsd/2af5201b-24a2-44ab-8aaf-c0194f7a82f0.sized-1000x1000.png?w=800" />
+          <img src={SaveAPlateVendorFeedPage} alt="" />
         </div>
         <div>
-          <img src="https://snworksceo.imgix.net/bsd/2af5201b-24a2-44ab-8aaf-c0194f7a82f0.sized-1000x1000.png?w=800" />
+          <img src={SaveAPlateClientPage} alt="" />
+        </div>
+        <div>
+          <img src={SaveAPlateResources} alt="" />
+        </div>
+        <div>
+          <img src={SaveAPlateTeam} alt="" />
         </div>
       </Carousel>
     );
