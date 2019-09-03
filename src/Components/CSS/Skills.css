@@ -16,3 +16,10 @@
 #customImg {
   width: 20%;
 }
+
+.tech-title {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 4em;
+}

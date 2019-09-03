@@ -4,6 +4,7 @@ import Home from "./Components/Home.js";
 import IntroductionHome from "./Components/IntroductionHome.js";
 import Projects from "./Components/Projects.js";
 import Skills from "./Components/Skills.js";
+import Footer from "./Components/Footer.js";
 
 import "./App.css";
 
@@ -44,6 +45,7 @@ class App extends Component {
         <IntroductionHome />
         <Projects projects={this.projects} />
         <Skills skills={this.skills} />
+        <Footer />
       </div>
     );
   }

@@ -12,6 +12,15 @@ class Skills extends Component {
       <div className="parallax-container" id="parallax-skills">
         <div className="parallax">
           <img src={nycPhone} alt="" />
+          <div className="container-main-flexbox">
+            <div className="container" id="displayNameHomePage">
+              <div className="row">
+                <span className="unique col s12 m12 name-style">
+                  My Tech Stack
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );
@@ -22,7 +31,7 @@ class Skills extends Component {
       <div ref={this.props.skills}>
         <div className="container">
           <div className="row">
-            <span className="col s12 m12">frontend</span>
+            <span className="col s12 m12 tech-title">Frontend</span>
 
             <img
               className="col s6 m3 skillImage"
@@ -56,7 +65,7 @@ class Skills extends Component {
         </div>
         <div className="container">
           <div className="row">
-            <span className="col s12 m12">Backend</span>
+            <span className="col s12 m12 tech-title">Backend</span>
 
             <img
               className="col s6 m3 skillImage2"
