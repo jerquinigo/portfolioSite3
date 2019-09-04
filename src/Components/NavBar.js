@@ -24,14 +24,20 @@ class NavBar extends Component {
             </a>
             <div className="row">
               <ul className="right hide-on-med-and-down">
-                <li className="col m3">Home</li>
-                <li className="col m3" onClick={this.props.clickProjects}>
+                <li className="col m3  nav-text-style">Home</li>
+                <li
+                  className="col m3 nav-text-style"
+                  onClick={this.props.clickProjects}
+                >
                   Projects
                 </li>
-                <li className="col m3" onClick={this.props.clickSkills}>
+                <li
+                  className="col m3 nav-text-style"
+                  onClick={this.props.clickSkills}
+                >
                   Skills
                 </li>
-                <li className="col m3">Resume</li>
+                <li className="col m3 nav-text-style">Resume</li>
               </ul>
             </div>
           </div>
