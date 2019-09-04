@@ -75,6 +75,7 @@ class NavBar extends Component {
                 Projects
               </li>
             </div>
+
             <div
               className="sidenav-close sub-nav-item-divs"
               onClick={this.props.clickSkills}
@@ -83,13 +84,14 @@ class NavBar extends Component {
                 className="sidenav-close sub-nav-item-divs customize-subnames"
                 onClick={this.props.clickSkills}
               >
-                Skills
+                <span className="test">Skills</span>
               </li>
             </div>
             <div className="sidenav-close sub-nav-item-divs">
               <li className="sidenav-close sub-nav-item-divs customize-subnames">
                 Resume
               </li>
+              <li />
             </div>
           </ul>
         </div>

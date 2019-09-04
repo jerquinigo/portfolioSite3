@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import "./CSS/Footer.css";
 class Footer extends Component {
   constructor() {
     super();
@@ -16,12 +16,16 @@ class Footer extends Component {
           </div>
           <div className="container">
             <div className="row">
-              <div className="col s4 m4">
-                <i class="fa fa-github fa-4x" />
-              </div>
-              <div className="col s4 m4">
-                <i class="fa fa-linkedin-square fa-4x" />
-              </div>
+              <a href="https://github.com/jerquinigo" target="blank">
+                <div className="col s4 m4">
+                  <i class="fa fa-github fa-4x" />
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/jerquinigo/" target="blank">
+                <div className="col s4 m4">
+                  <i class="fa fa-linkedin-square fa-4x" />
+                </div>
+              </a>
               <div className="col s4 m4">
                 <i class="fa fa-id-card-o fa-4x" />
               </div>
