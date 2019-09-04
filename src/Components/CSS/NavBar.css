@@ -42,3 +42,8 @@ nav .sidenav-trigger i {
   /* border-top: 1px solid rgba(0, 0, 0, 0.125); */
   font-weight: 700;
 }
+
+.mobile-anchor-resume {
+  color: inherit;
+  padding: 0 0 0 0 !important;
+}

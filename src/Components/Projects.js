@@ -57,7 +57,7 @@ class Projects extends Component {
             </span>
             <div className="card-body-container">
               <span className="card-body">
-                a webapp that was created to reduce food waste and hunger in
+                A webapp that was created to reduce food waste and hunger in
                 NYC. There are two types of users: Vendors & Clients. Vendors
                 include businesses such as restaurants and catering halls. They
                 have the option to add food items for donation. On the other
@@ -93,10 +93,20 @@ class Projects extends Component {
             </div>
             <div className="row">
               <p className="col s6">
-                <a href="#">This is a link</a>
+                <a
+                  target="blank"
+                  href="https://interest-clone-project.herokuapp.com/"
+                >
+                  Live Site
+                </a>
               </p>
               <p className="col s6">
-                <a href="#">This is a link</a>
+                <a
+                  target="blank"
+                  href="https://github.com/jerquinigo/Pinterest_Clone"
+                >
+                  Github Code
+                </a>
               </p>
             </div>
           </div>

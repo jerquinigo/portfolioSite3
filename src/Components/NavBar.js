@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import M from "materialize-css";
+import JonResume from "./Jonathan_E_Software_Engineer_Resume.pdf";
 import "./CSS/NavBar.css";
 
 class NavBar extends Component {
@@ -45,7 +46,9 @@ class NavBar extends Component {
                   <a className="nav-text-style">Skills</a>
                 </li>
                 <li className="col m3 nav-text-style">
-                  <a className="nav-text-style">Resume</a>
+                  <a href={JonResume} target="blank" className="nav-text-style">
+                    Resume
+                  </a>
                 </li>
               </ul>
             </div>
@@ -87,12 +90,15 @@ class NavBar extends Component {
                 <span className="test">Skills</span>
               </li>
             </div>
-            <div className="sidenav-close sub-nav-item-divs">
-              <li className="sidenav-close sub-nav-item-divs customize-subnames">
-                Resume
-              </li>
-              <li />
-            </div>
+            <a className="mobile-anchor-resume" href={JonResume} target="blank">
+              <div className="sidenav-close sub-nav-item-divs">
+                <li className="sidenav-close sub-nav-item-divs customize-subnames">
+                  Resume
+                </li>
+
+                <li />
+              </div>
+            </a>
           </ul>
         </div>
       </div>
