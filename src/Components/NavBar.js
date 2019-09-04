@@ -24,36 +24,71 @@ class NavBar extends Component {
             </a>
             <div className="row">
               <ul className="right hide-on-med-and-down">
-                <li className="col m3  nav-text-style">Home</li>
+                <li
+                  className="col m3  nav-text-style"
+                  onClick={this.props.clickHome}
+                >
+                  {" "}
+                  <a className="nav-text-style">Home</a>
+                </li>
+
                 <li
                   className="col m3 nav-text-style"
                   onClick={this.props.clickProjects}
                 >
-                  Projects
+                  <a className="nav-text-style">Projects</a>
                 </li>
                 <li
                   className="col m3 nav-text-style"
                   onClick={this.props.clickSkills}
                 >
-                  Skills
+                  <a className="nav-text-style">Skills</a>
                 </li>
-                <li className="col m3 nav-text-style">Resume</li>
+                <li className="col m3 nav-text-style">
+                  <a className="nav-text-style">Resume</a>
+                </li>
               </ul>
             </div>
           </div>
         </nav>
 
         <ul className="sidenav" id="mobile-links">
-          <div className="logo-div indigo">
-            <li className="sidenav-close indigo">Jonathan Erquinigo</li>
+          <div
+            className="logo-div sidenav-close indigo"
+            onClick={this.props.clickHome}
+          >
+            <li
+              className="sidenav-close sub-nav-item-divs white-text indigo"
+              onClick={this.props.clickHome}
+            >
+              Jonathan Erquinigo
+            </li>
           </div>
-          <li>link 1</li>
-          <li className="sidenav-close" onClick={this.props.clickProjects}>
-            Projects
-          </li>
-          <li className="sidenav-close" onClick={this.props.clickSkills}>
-            Skills
-          </li>
+          <div
+            className="sidenav-close sub-nav-item-divs"
+            onClick={this.props.clickProjects}
+          >
+            <li
+              className="sidenav-close sub-nav-item-divs"
+              onClick={this.props.clickProjects}
+            >
+              Projects
+            </li>
+          </div>
+          <div
+            className="sidenav-close sub-nav-item-divs"
+            onClick={this.props.clickSkills}
+          >
+            <li
+              className="sidenav-close sub-nav-item-divs"
+              onClick={this.props.clickSkills}
+            >
+              Skills
+            </li>
+          </div>
+          <div className="sidenav-close sub-nav-item-divs">
+            <li className="sidenav-close sub-nav-item-divs">Resume</li>
+          </div>
         </ul>
       </div>
     );

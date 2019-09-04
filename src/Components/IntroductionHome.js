@@ -40,7 +40,7 @@ class IntroductionHome extends Component {
   };
 
   render() {
-    return <div>{this.displayParallaxHeader()}</div>;
+    return <div ref={this.props.home}>{this.displayParallaxHeader()}</div>;
   }
 }
 
