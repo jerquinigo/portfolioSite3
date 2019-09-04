@@ -37,12 +37,17 @@ class Projects extends Component {
             </div>
             <div className="row">
               <p className="col s6">
-                <a target="blank" href="http://save-a-plate.herokuapp.com/">
+                <a
+                  className="card-anchor-links"
+                  target="blank"
+                  href="http://save-a-plate.herokuapp.com/"
+                >
                   Live Site
                 </a>
               </p>
               <p className="col s6">
                 <a
+                  className="card-anchor-links"
                   target="blank"
                   href="https://github.com/jerquinigo/SaveAPlate"
                 >
@@ -56,14 +61,16 @@ class Projects extends Component {
               Save A Plate<i className="material-icons right">close</i>
             </span>
             <div className="card-body-container">
-              <span className="card-body">
-                A webapp that was created to reduce food waste and hunger in
-                NYC. There are two types of users: Vendors & Clients. Vendors
-                include businesses such as restaurants and catering halls. They
-                have the option to add food items for donation. On the other
-                hand, clients are non-profit organizations that can claim those
-                food items as well as favorite vendors.
-              </span>
+              <div className="container">
+                <span className="card-body">
+                  A webapp that was created to reduce food waste and hunger in
+                  NYC. There are two types of users: Vendors & Clients. Vendors
+                  include businesses such as restaurants and catering halls.
+                  They have the option to add food items for donation. On the
+                  other hand, clients are non-profit organizations that can
+                  claim those food items as well as favorite vendors.
+                </span>
+              </div>
               <div className="container">
                 <div className="row">
                   <div className="col s12">
@@ -94,6 +101,7 @@ class Projects extends Component {
             <div className="row">
               <p className="col s6">
                 <a
+                  className="card-anchor-links"
                   target="blank"
                   href="https://interest-clone-project.herokuapp.com/"
                 >
@@ -102,6 +110,7 @@ class Projects extends Component {
               </p>
               <p className="col s6">
                 <a
+                  className="card-anchor-links"
                   target="blank"
                   href="https://github.com/jerquinigo/Pinterest_Clone"
                 >
@@ -115,14 +124,16 @@ class Projects extends Component {
               Interest<i className="material-icons right">close</i>
             </span>
             <div className="card-body-container">
-              <span className="card-body">
-                Interest is a clone of the Pinterest Website. I wanted to test
-                my skills and recreate the same functionality that The real
-                website offers. It was a challenging task, but managed to
-                replicate it. It is a fullstack application that uses all my
-                current tech stack skills. It has user authentications and redux
-                to manage the states.
-              </span>
+              <div className="container">
+                <span className="card-body">
+                  Interest is a clone of the Pinterest Website. I wanted to test
+                  my skills and recreate the same functionality that The real
+                  website offers. It was a challenging task, but managed to
+                  replicate it. It is a fullstack application that uses all my
+                  current tech stack skills. It has user authentications and
+                  redux to manage the states.
+                </span>
+              </div>
               <div className="container">
                 <div className="row">
                   <div className="col s12">
@@ -154,6 +165,7 @@ class Projects extends Component {
             <div className="row">
               <p className="col s6">
                 <a
+                  className="card-anchor-links"
                   target="blank"
                   href="https://retroplayer-af548.firebaseapp.com/"
                 >
@@ -162,6 +174,7 @@ class Projects extends Component {
               </p>
               <p className="col s6">
                 <a
+                  className="card-anchor-links"
                   target="blank"
                   href="https://github.com/jerquinigo/youtube-retro-player"
                 >
@@ -175,11 +188,13 @@ class Projects extends Component {
               Retro Music Player<i className="material-icons right">close</i>
             </span>
             <div className="card-body-container">
-              <span className="card-body">
-                A site that is using YouTube API to get videos by a search
-                request and play the video in an old school crt tv. The
-                application is meant to give the 90's MTV's aesthetic.
-              </span>
+              <div className="container">
+                <span className="card-body">
+                  A site that is using YouTube API to get videos by a search
+                  request and play the video in an old school crt tv. The
+                  application is meant to give the 90's MTV's aesthetic.
+                </span>
+              </div>
               <div className="container">
                 <div className="row">
                   <div className="col s12">
