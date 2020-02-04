@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 import SaveAPlateCarousel from "./SaveAPlateCarousel.js";
 import InterestCarousel from "./InterestCarousel.js";
 import RetroMusicPlayerCarousel from "./RetroMusicPlayerCarousel.js";
+import TetrisCarousel from "./TetrisCarousel.js"
 import M from "materialize-css";
 import saveAPlate1 from "../Assets/saveAPlate1.png";
 import interest1 from "../Assets/interest1.png";
 import retroMusicPlayer from "../Assets/retroMusicPlayer.png";
+import tetrisDemo from "../Assets/tetrisDemo.png";
 import "./CSS/Projects.css";
 
 class Projects extends Component {
@@ -209,6 +211,71 @@ class Projects extends Component {
     );
   };
 
+
+  //setting up for tetris
+  displayTetris = () => {
+    return (
+      <div className="main-card-container">
+        <div className="card col s12 m6">
+          <div className="card-image waves-effect waves-block waves-light">
+            <img className="activator" src={tetrisDemo} alt="" />
+          </div>
+          <div className="card-content">
+            <div className="row">
+              <span className="card-title activator grey-text text-darken-4 col s12">
+                Tetris JavaScript <i className="material-icons right">more_vert</i>
+              </span>
+            </div>
+            <div className="row">
+              <p className="col s6">
+                <a
+                  className="card-anchor-links"
+                  target="blank"
+                  href="https://tetrisjavascript-8adde.firebaseapp.com/"
+                >
+                  Live Site
+                </a>
+              </p>
+              <p className="col s6">
+                <a
+                  className="card-anchor-links"
+                  target="blank"
+                  href="https://github.com/jerquinigo/tetris-game"
+                >
+                  Github Code
+                </a>
+              </p>
+            </div>
+          </div>
+          <div className="card-reveal">
+            <span className="card-title grey-text text-darken-4">
+              Tetris JavaScript<i className="material-icons right">close</i>
+            </span>
+            <div className="card-body-container">
+              <div className="container">
+                <span className="card-body">
+                  A webapp that was created to reduce food waste and hunger in
+                  NYC. There are two types of users: Vendors & Clients. Vendors
+                  include businesses such as restaurants and catering halls.
+                  They have the option to add food items for donation. On the
+                  other hand, clients are non-profit organizations that can
+                  claim those food items as well as favorite vendors.
+                </span>
+              </div>
+              <div className="container">
+                <div className="row">
+                  <div className="col s12">
+                    <TetrisCarousel />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
   render() {
     return (
       <div ref={this.props.projects}>
@@ -218,6 +285,7 @@ class Projects extends Component {
           <div className="col m4" />
           {this.displayInterest()}
           {this.displayRetroPlayer()}
+          {this.displayTetris()}
         </div>
       </div>
     );
