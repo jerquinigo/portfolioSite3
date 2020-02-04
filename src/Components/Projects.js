@@ -4,6 +4,7 @@ import SaveAPlateCarousel from "./SaveAPlateCarousel.js";
 import InterestCarousel from "./InterestCarousel.js";
 import RetroMusicPlayerCarousel from "./RetroMusicPlayerCarousel.js";
 import TetrisCarousel from "./TetrisCarousel.js"
+import SubRedditCarousel from "./SubRedditCarousel.js"
 import M from "materialize-css";
 import saveAPlate1 from "../Assets/saveAPlate1.png";
 import interest1 from "../Assets/interest1.png";
@@ -320,7 +321,7 @@ class Projects extends Component {
               <div className="container">
                 <div className="row">
                   <div className="col s12">
-                    <TetrisCarousel />
+                    <SubRedditCarousel />
                   </div>
                 </div>
               </div>
