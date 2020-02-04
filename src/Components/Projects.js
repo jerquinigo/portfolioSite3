@@ -65,7 +65,7 @@ class Projects extends Component {
             <div className="card-body-container">
               <div className="container">
                 <span className="card-body">
-                  A webapp that was created to reduce food waste and hunger in
+                  A web app that was created to reduce food waste and hunger in
                   NYC. There are two types of users: Vendors & Clients. Vendors
                   include businesses such as restaurants and catering halls.
                   They have the option to add food items for donation. On the
@@ -254,12 +254,7 @@ class Projects extends Component {
             <div className="card-body-container">
               <div className="container">
                 <span className="card-body">
-                  A webapp that was created to reduce food waste and hunger in
-                  NYC. There are two types of users: Vendors & Clients. Vendors
-                  include businesses such as restaurants and catering halls.
-                  They have the option to add food items for donation. On the
-                  other hand, clients are non-profit organizations that can
-                  claim those food items as well as favorite vendors.
+                Front end application that is using Canvas Api with Vanilla JavaScript. Web app also compatable to play on mobile phone with a controller layout. 
                 </span>
               </div>
               <div className="container">
