@@ -254,7 +254,7 @@ class Projects extends Component {
             <div className="card-body-container">
               <div className="container">
                 <span className="card-body">
-                Front end application that is using Canvas Api with Vanilla JavaScript. Web app also compatable to play on mobile phone with a controller layout . 
+                Front end application that is using Canvas Api with Vanilla JavaScript. Web app also compatable to play on mobile phone with a controller layout. 
                 </span>
               </div>
               <div className="container">
