@@ -9,6 +9,7 @@ import saveAPlate1 from "../Assets/saveAPlate1.png";
 import interest1 from "../Assets/interest1.png";
 import retroMusicPlayer from "../Assets/retroMusicPlayer.png";
 import tetrisDemo from "../Assets/tetrisDemo.png";
+import subRedditDemo from "../Assets/subRedditDemo.png"
 import "./CSS/Projects.css";
 
 class Projects extends Component {
@@ -212,7 +213,7 @@ class Projects extends Component {
   };
 
 
-  //setting up for tetris
+  //tetris JavaScript Display
   displayTetris = () => {
     return (
       <div className="main-card-container">
@@ -271,6 +272,65 @@ class Projects extends Component {
     );
   };
 
+  // subreddit project display
+    displaySubReddit = () => {
+    return (
+      <div className="main-card-container">
+        <div className="card col s12 m6">
+          <div className="card-image waves-effect waves-block waves-light">
+            <img className="activator" src={subRedditDemo} alt="" />
+          </div>
+          <div className="card-content">
+            <div className="row">
+              <span className="card-title activator grey-text text-darken-4 col s12">
+              SubReddit App Viewer<i className="material-icons right">more_vert</i>
+              </span>
+            </div>
+            <div className="row">
+              <p className="col s6">
+                <a
+                  className="card-anchor-links"
+                  target="blank"
+                  href="https://subreddit-app-viewer.firebaseapp.com/"
+                >
+                  Live Site
+                </a>
+              </p>
+              <p className="col s6">
+                <a
+                  className="card-anchor-links"
+                  target="blank"
+                  href="https://github.com/jerquinigo/subreddit-app-viewer"
+                >
+                  Github Code
+                </a>
+              </p>
+            </div>
+          </div>
+          <div className="card-reveal">
+            <span className="card-title grey-text text-darken-4">
+              SubReddit App Viewer<i className="material-icons right">close</i>
+            </span>
+            <div className="card-body-container">
+              <div className="container">
+                <span className="card-body">
+                Front end application that uses the Reddit API to display subreddit's based on filters entered by the user.
+                </span>
+              </div>
+              <div className="container">
+                <div className="row">
+                  <div className="col s12">
+                    <TetrisCarousel />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
   render() {
     return (
       <div ref={this.props.projects}>
@@ -281,6 +341,7 @@ class Projects extends Component {
           {this.displayInterest()}
           {this.displayRetroPlayer()}
           {this.displayTetris()}
+          {this.displaySubReddit()}
         </div>
       </div>
     );
