@@ -46,7 +46,7 @@ class NavBar extends Component {
                   <a className="nav-text-style">Skills</a>
                 </li>
                 <li className="col m3 nav-text-style">
-                  <a href={JonResume} target="blank" className="nav-text-style">
+                  <a href="https://drive.google.com/file/d/1SmPW9UYgRuV2cetYOe0SXtUu3lHHZ7nT/view?usp=sharing" target="blank" className="nav-text-style">
                     Resume
                   </a>
                 </li>
@@ -90,7 +90,7 @@ class NavBar extends Component {
                 <span className="test">Skills</span>
               </li>
             </div>
-            <a className="mobile-anchor-resume" href={JonResume} target="blank">
+            <a className="mobile-anchor-resume" href="https://drive.google.com/file/d/1SmPW9UYgRuV2cetYOe0SXtUu3lHHZ7nT/view?usp=sharing" target="blank">
               <div className="sidenav-close sub-nav-item-divs">
                 <li className="sidenav-close sub-nav-item-divs customize-subnames">
                   Resume

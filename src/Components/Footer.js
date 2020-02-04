@@ -35,7 +35,7 @@ class Footer extends Component {
                   <i class="fa fa-linkedin-square fa-4x" />
                 </div>
               </a>
-              <a className="footer-anchor" href={JonResume} target="blank">
+              <a className="footer-anchor" href="https://drive.google.com/file/d/1SmPW9UYgRuV2cetYOe0SXtUu3lHHZ7nT/view?usp=sharing" target="blank">
                 <div className="col s4 m4">
                   <i class="fa fa-id-card-o fa-4x" />
                 </div>
