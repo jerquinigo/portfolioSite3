@@ -96,11 +96,39 @@ class Skills extends Component {
     );
   };
 
+
+  displayLanguages = () => {
+    return (
+      <div>
+        <div className="container">
+          <div className="row">
+            <span className="col s12 m12 tech-title">Languages</span>
+          </div>
+          <div className="row">
+            <div className="col s3 m3"/>
+            <img
+              className="col s3 m3 skillImage"
+              src="https://icongr.am/devicon/javascript-original.svg"
+              alt=""
+            />
+            <img
+              className="col s3 m3 skillImage"
+              src="https://icongr.am/devicon/python-original.svg"
+              alt=""
+            />
+            <div className="col s3 m3"/>
+          </div>  
+        </div>
+      </div>
+    );
+  };
+
   render() {
     return (
       <div>
         {this.displayParallaxSkills()}
         {this.displaySkills()}
+        {this.displayLanguages()}
       </div>
     );
   }

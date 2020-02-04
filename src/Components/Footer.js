@@ -44,7 +44,7 @@ class Footer extends Component {
           </div>
         </div>
         <div class="footer-copyright">
-          <div class="container">© 2019 Jonathan E</div>
+          <div class="container">© 2020 Jonathan E</div>
         </div>
       </footer>
     );
